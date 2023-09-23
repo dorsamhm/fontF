@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/stylesheet/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheet/bootstrap.min.css.map">
+    <link rel="stylesheet" href="assets/stylesheet/master.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+</head>
+<!-- https://www.freefaces.gallery/ -->
+<body>
+    <main class="col-12 main">
+        <div class="container-fluid container-xxl p-0 categoriesTop position-relative">
+            <div class="row h-100 w-100 m-0">
+                <div class="col-12 h-100 p-0">
+                    <div class="row h-100 w-100 m-0 px-3 px-sm-0 justify-content-start justify-content-sm-center align-items-center">
+                        <div class="category flex-wrap d-flex justify-content-center justify-content-lg-start px-0 px-lg-3 px-xl-5 align-items-lg-center">
+                            <div class="row display">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">display</h3>
+                            </div>
+                            <div class="row monospace">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">monospace</h3>
+                            </div>
+                            <div class="row sansSerif">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">sans serif</h3>
+                            </div>
+                            <div class="row serif">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">serif</h3>
+                            </div>
+                        </div>
+                        <span class="d-flex d-lg-none justify-content-md-center align-items-center toggle" onclick="toggleMenu()">menu</span>                        
+                        <div class="filterBox flex-wrap d-flex justify-content-center px-2 align-content-center">
+                            <span class="w-100" onclick="closeFilterBox()">X</span>
+                            <input class="w-100 h-50 textInput" onclick="getText()" type="text" value="" placeholder="type something">
+                            <input class="w-100 colorInput" onclick="getColor()" type="color" value="#fff7e9">
+                            <button class="w-100" onclick="reset()">reset</button>
+                        </div>
+                        <div class="selectedBox flex-wrap d-flex justify-content-center px-2 align-content-center">
+                            <span class="w-100" onclick="closeSelectedBox()">X</span>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">pilowlava</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">outward</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">typefesse</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">relieve</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">tightrope</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">miso</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">major mono</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">anonymous pro</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">work sans</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">patriot</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">ostrich sans</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">soria</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">rude</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                            <div class="w-100 fontName flex-wrap justify-content-center align-content-center">
+                                <h3 class="w-100 h-50">magilio</h3>
+                                <span class="h-25 w-100">Copy</span>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!-- end of categoriesTop******** -->
+        <div class="container-fluid container-xxl buttons px-3">
+            <div class="row h-100 w-100 m-0">
+                <div class="col-12 h-100 p-0">
+                    <div class="row h-100 w-100 m-0 justify-content-between px-3 px-lg-5 align-items-center">
+                        <a class="filterButton row justify-content-center align-items-center"  onclick="filterBox()">
+                            <span class="h-100 w-75">filters</span>
+                            <span class="w-25 h-100 p-0"><i class="bi bi-funnel w-100 h-100"></i></span>
+                        </a>
+                        <a class="fontButton row justify-content-center align-items-center" onclick="selectedBox()">
+                            <span class="h-100 w-100">selected fonts</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of buttons row************ -->
+        <div class="container-fluid container-xxl fontBox px-3">
+            <div class="row h-100 w-100 m-0">
+                <div class="col-12 h-100 p-0">
+                    <div class="row h-100 w-100 m-0 px-3">
+                        <div class="displayBox box position-relative w-100 h-100 top-0 start-0 flex-wrap justify-content-center px-0 align-content-center ">
+                            <div class="row pilowlava">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">pilowlava</h3>
+                            </div>
+                            <div class="row outward">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">outward</h3>
+                            </div>
+                            <div class="row typefesse">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">typefesse</h3>
+                            </div>
+                            <div class="row relieve">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">relieve</h3>
+                            </div>
+                            <div class="row tightrope">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">tightrope</h3>
+                            </div>
+                        </div>
+                        <div class="monospaceBox box position-relative w-100 h-100 top-0 start-0 flex-wrap justify-content-center px-0 align-content-center ">
+                            <div class="row miso">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">miso</h3>
+                            </div>
+                            <div class="row majorMono">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">major mono</h3>
+                            </div>
+                            <div class="row anonymous">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">anonymous pro</h3>
+                            </div>
+                        </div>
+                        <div class="sansSerifBox box position-relative w-100 h-100 top-0 start-0 flex-wrap justify-content-center px-0 align-content-center ">
+                            <div class="row workSans">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">work sans</h3>
+                            </div>
+                            <div class="row patriot">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">patriot</h3>
+                            </div>
+                            <div class="row ostrichSans">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">ostrich sans</h3>
+                            </div>
+                        </div>
+                        <div class="serifBox box position-relative w-100 h-100 top-0 start-0 flex-wrap justify-content-center px-0 align-content-center ">
+                            <div class="row soria">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">soria</h3>
+                            </div>
+                            <div class="row rude">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">rude</h3>
+                            </div>
+                            <div class="row magilio">
+                                <span class="h-75 w-100">Aa</span>
+                                <h3 class="w-100 h-25">magilio</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of fontBoxes row************ -->
+    </main>
+</body>
+<script>
+    function toggleMenu(){
+        document.getElementsByClassName('category')[0].classList.toggle('showToggleMenu')
+    }
+    function filterBox(){
+        document.getElementsByClassName('filterBox')[0].classList.add('showFilterBox')
+    }
+    function selectedBox(){
+        document.getElementsByClassName('selectedBox')[0].classList.add('showSelectedBox')
+    }
+    function closeFilterBox(){
+        document.getElementsByClassName('filterBox')[0].classList.remove('showFilterBox')
+    }
+    function closeSelectedBox(){
+        document.getElementsByClassName('selectedBox')[0].classList.remove('showSelectedBox')
+    }
+    let fontBox = document.querySelectorAll('.box>div>span')
+    // console.log(fontBox);
+    function getText(){
+        let txt = document.getElementsByClassName('textInput')[0].value
+        // console.log(txt);
+        for(let i =0; i<fontBox.length; i++){
+            fontBox[i].innerText = txt;
+            if(txt.length > 2){
+                fontBox[i].style.fontSize = '70px'
+                if(txt.length > 4){
+                fontBox[i].style.fontSize = '50px'
+                }
+                if(txt.length > 6){
+                fontBox[i].style.fontSize = '30px'
+                }
+                if(txt.length > 10){
+                fontBox[i].style.fontSize = '20px'
+                }
+            }
+            else{
+                fontBox[i].style.fontSize = '100px'
+            }
+        }
+    }
+    function getColor(){
+        let clr = document.getElementsByClassName('colorInput')[0].value
+        for(let i =0; i<fontBox.length; i++){
+            fontBox[i].style.color = clr;
+        }
+        // console.log(clr)
+    }
+    function reset(){
+        for(let i =0; i<fontBox.length; i++){
+            fontBox[i].innerText = 'Aa';
+            fontBox[i].style.fontSize = '100px'
+            fontBox[i].style.color = '#fff7e9';
+            document.getElementsByClassName('textInput')[0].value = ''
+            document.getElementsByClassName('colorInput')[0].value = '#fff7e9'
+        }
+    }
+    let _div = document.querySelectorAll('.category>div')
+    let _box = document.querySelectorAll('.box')
+    // console.log(_box);
+    for (i =0; i < _box.length; i++){
+        if(i!=0){
+            _box[i].setAttribute('data-status', true)
+            // _box[i].style.display = 'none'
+            _box[i].classList.add('dnone')
+        }
+    }
+    _div.forEach(function(x, index){
+        x.addEventListener('click', function(){
+            let status = _box[index].getAttribute('data-status')
+            for (i =0; i < _box.length; i++){
+                _box[i].setAttribute('data-status', true)
+                _box[i].classList.add('dnone')
+            }            
+            if (status == 'true'){
+                _box[index].classList.remove('dnone')
+                _box[index].setAttribute('data-status', false)
+            }
+            else{
+                _box[index].classList.add('dnone')
+                _box[index].setAttribute('data-status', true)
+            }
+        })
+    })
+    let fontNames = document.querySelectorAll('.box>div')
+    // console.log(fontNames);
+    let fontNameToggles = document.querySelectorAll('.fontName')
+    // console.log(fontNameToggles);
+    for (i =0; i < fontNameToggles.length; i++){
+        // true = closed
+        fontNameToggles[i].setAttribute('data-status', true)
+        fontNameToggles[i].classList.add('dnoneName')
+    }
+    fontNames.forEach(function(x, index){
+        x.addEventListener('click', function(){
+            let status = fontNameToggles[index].getAttribute('data-status')
+            if (status == 'true'){
+                fontNameToggles[index].classList.remove('dnoneName')
+                fontNameToggles[index].setAttribute('data-status', false)
+            }
+            else{
+                fontNameToggles[index].classList.add('dnoneName')
+                fontNameToggles[index].setAttribute('data-status', true)
+            }
+        })
+    })
+    let copySpan = document.querySelectorAll('.fontName>span')
+    // console.log(copySpan);
+    copySpan.forEach(function(val){
+        val.addEventListener('click', function(){
+            let temp = val.previousElementSibling.innerHTML
+            // console.log(temp);
+            navigator.clipboard.writeText(temp)
+            alert('Font Name Copied')
+        })
+    })
+</script>
+</html>
